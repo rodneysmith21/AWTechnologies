@@ -154,13 +154,42 @@ button{
                 </div>
             </div>
         </div>
-
-        <button style="margin-top: -44px;" id="login">Log In</button>
         <div class="social">
-          <button class="go"></i>Sign in</button>
+          
           <button class="fb"><a href="./AWTechnologies.html" id="firstPage"></a></i>Create Account</button>
         </div>
     </form>
-    <script src="./js/app.js"></script>
+    <script>
+
+      
+       let getCreateAccountBtn = document.getElementById('firstPage');
+      getCreateAccountBtn.addEventListner('click',()=>{
+        event.preventDefault();
+
+        collectData();
+      }
+
+    function collectData(){
+         let getUserName = document.getElementById('Username').value;
+      let getfirstName = document.getElementById('firstName').value;
+      let getLastName = document.getElementById('lastName').value;
+      let getEmail = document.getElementById('Email').value;
+      let getPassword = document.getElementById('passWord').value;
+      let getConfirmPassword = document.getElementById('confirmPassword').value;
+
+  //Store key value pairs locally in localStorage.setItem ---->(property, and method);
+        
+        localStorage.setItem('Username', getUserName);
+         localStorage.setItem('getFirstName', getUserName);
+         localStorage.setItem('getLastName', getUserName);
+         localStorage.setItem('getEmail', getUserName);
+         localStorage.setItem('getPassword', passWord);
+         localStorage.setItem('getConfirmPassword', getConfirmPassword );
+    }
+      collectData();
+
+     
+        
+    </script>
 </body>
 </html>
