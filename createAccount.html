@@ -143,53 +143,59 @@ button{
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                        <main class="firstFunctionality">
-                            <input type="text" value="" placeholder="Username" id="Username" required>
-                            <input type="text" value="" placeholder="First Name" id="firstName" required>
-                            <input type="text" value="" placeholder="Last name" id="lastName" required>
-                            <input type="text" value="" placeholder="Email" id="Email" required>
-                            <input type="text" value="" placeholder="Password" id="passWord" required>
-                            <input type="text" value="" placeholder=" Confirm Password" id="confirmPassword" required>
-                        </main>
+                    <main class="firstFunctionality">
+                        <input type="text" value="" placeholder="Username" id="Username">
+                        <input type="text" value="" placeholder="First Name" id="firstName">
+                        <input type="text" value="" placeholder="Last name" id="lastName">
+                        <input type="text" value="" placeholder="Email" id="Email">
+                        <input type="text" value="" placeholder="Password" id="passWord">
+                        <input type="text" value="" placeholder=" Confirm Password" id="confirmPassword">
+                    </main>
                 </div>
             </div>
         </div>
+
+        <button style="margin-top: -44px;" id="login">Log In</button>
         <div class="social">
-          
+          <!-- <button class="go"></i>Sign in</button> -->
           <button class="fb"><a href="./AWTechnologies.html" id="firstPage"></a></i>Create Account</button>
         </div>
     </form>
-    <script>
+    <!-- <script>
+        let getUserName = document.getElementById('Username').value;
+        let getFirstName = document.getElementById('firstName').value;
 
-      
-       let getCreateAccountBtn = document.getElementById('firstPage');
-      getCreateAccountBtn.addEventListner('click',()=>{
-        event.preventDefault();
 
-        collectData();
-      };
+            let getCreateButton = document.getElementById('firstPage');
+            getCreateButton.addEventListener('click', ()=>{
+            event.preventDefault();
 
-    function collectData(){
-         let getUserName = document.getElementById('Username').value;
-      let getfirstName = document.getElementById('firstName').value;
-      let getLastName = document.getElementById('lastName').value;
-      let getEmail = document.getElementById('Email').value;
-      let getPassword = document.getElementById('passWord').value;
-      let getConfirmPassword = document.getElementById('confirmPassword').value;
+            console.log('Click')
 
-  //Store key value pairs locally in localStorage.setItem ---->(property, and method);
-        
-        localStorage.setItem('Username', getUserName);
-         localStorage.setItem('Firstname', getUserName);
-         localStorage.setItem('Lastname', getUserName);
-         localStorage.setItem('Email', getUserName);
-         localStorage.setItem('Password', passWord);
-         localStorage.setItem('ConfirmPassword', getConfirmPassword );
-    }
-      collectData();
+            // let getUserName = document.getElementById('Username').value;
 
-     
-        
-    </script>
+            // if(getUserName > 1){
+            //     console.log(getUserName);
+            // }
+    //         function collectUserData(getUserName, getFirstName){
+    //             if(getUserName && getFirstName > 1){
+    //                 localStorage.setItem('Username', getUserName);
+    //                 localStorage.setItem('getFirstName', getFirstName);
+        // let userObj = {
+        //     getUserName: getUserName,
+        //     getFirstName: getFirstName
+        // }
+
+        // console.log('This is your Username' + userObj.getUserName);
+
+    //     }
+    // }
+
+    // collectUserData();
+})
+
+// collectUserData();
+
+    </script> -->
 </body>
 </html>
